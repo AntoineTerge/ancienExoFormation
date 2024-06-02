@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+
+* {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #C43B39;
+  height: auto;
+  width: 100%;
+}
+
+h1 {
+  color:white;
+}
+
+li {
+  width: auto;
+}
+
+h4, h1 {
+  text-align: center;
+}
+
+/* HEADER */
+#titre_site {
+  font-family: 'Poiret One', cursive;
+  font-size: 4rem;
+  color: white;
+}
+
+#titre_site:before {
+  content: "\f19d";
+  font-family: 'FontAwesome';
+  font-size: 3rem;
+  margin-right: 5%;
+}
+
+.titre_page{
+  text-align: center;
+}
+
+#logo{
+  max-width: 100px;
+  max-height: 80px;
+}
+
+.profils {
+  background-attachment: fixed;
+  height:90px;
+  padding-right: 1rem;
+}
+
+.police_header {
+  padding-right: 1%;
+  align-items: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.5rem;
+}
+
+.police_header a {
+  color: white;
+  text-decoration: none;
+}
+
+.police_header a:hover {
+  color: white;
+  letter-spacing: 1px;
+}
+/* FIN HEADER */
+
+/* BARRE DE NAVIGATION */
+.vertical_menu {
+  padding:0;
+  list-style:none;
+  text-align: center;
+  width: auto;
+  height: auto;
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.vertical_menu a:hover {
+  color: #e8e8e8;
+  text-decoration: none;
+}
+
+.vertical_menu ul, ul {
+  padding:0;
+  list-style:none;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.vertical_menu li {
+  background-color:#729EBF;
+  background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+  margin-bottom:2px;
+  box-shadow: 3px 3px 3px #999;
+  border:solid 1px #333A40;
+
+}
+.vertical_menu li li {
+  max-height:0;
+  overflow: hidden;
+  transition: all .5s;
+  border-radius:0;
+  background: #444;
+  box-shadow: none;
+  border:none;
+  margin:0;
+}
+.vertical_menu a {
+  display:block;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 0;
+}
+.vertical_menu li:hover {
+  background: #729EBF;
+}
+.vertical_menu li li:hover {
+  background: #999;
+}
+.vertical_menu ul li:last-child {
+  border-radius: 0 0 6px 6px;
+  border:none;
+}
+.vertical_menu li:hover li {
+  max-height: 15em;
+}
+
+.row .barre_nav {
+  height: 100vh;
+  width: auto;
+  background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+  padding-right: 0;
+  position: sticky;
+  top: 0;
+}
+/* FIN BARRE NAVIGATION */
+
+/* PAGE INDEX */
+.all_Block_index {
+  width: auto;
+  height: auto;
+}
+
+.card-img-top {
+  max-width: 100%;
+  max-height: 80%;
+}
+
+.card_text_index {
+  font-family: 'Poiret One', cursive;
+  font-size: 1.2rem;
+}
+/* FIN PAGE INDEX */
+
+/* PAGE RECRUTEMENT */
+.titre_Mission {
+  font-family: 'Poiret One', cursive;
+  display: block;
+  font-size: 2rem;
+  margin: auto;
+}
+
+.titre_Mission:before {
+  content: "\f0f2";
+  font-family: 'FontAwesome';
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+}
+/* FIN PAGE RECRUTEMENT */
+
+/* PAGE EQUIPE */
+.team{
+  display: block;
+  margin: auto;
+  border:4px solid #fff;;
+  outline:1px solid #999;
+  width: 80%;
+  margin-top: 1%;
+}
+
+.logos{
+  text-align: center;
+}
+
+.logopole{
+  width: 10%;
+  height: 10%;
+}
+
+.logoamiens{
+  width: 10%;
+  height: 10%;
+}
+/* FIN PAGE EQUIPE */
+
+/* PAGE CONFIDENTIALITE */
+.confidentiality {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+}
+
+.confidentialityList {
+  align-content: flex-start;
+}
+/* FIN PAGE CONFIDENTIALITE */
+
+/* DEBUT PAGES FORMATIONS */
+
+.card_formation {
+  font-size: 1.3rem;
+}
+
+.card_formation p {
+  min-height: 10rem;
+}
+
+.card_formation .card-header {
+  font-size: 2rem;
+  font-family: 'Poiret One', cursive;
+}
+
+.card_formation img{
+width: 100%;
+}
+/* FIN PAGES FORMATIONS */
+
+/* FORMULAIRES CONNEXION/INSCRIPTRION */
+.name_form {
+  display: flex;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  margin: auto;
+}
+
+form .fas {
+  line-height: 3rem;
+}
+
+.logo_form {
+  width: 8%;
+  height: 3.2rem;
+  background-color: #ddd;;
+  line-height: 3rem;
+  color: #81868a;
+  font-size: 1rem;
+
+}
+
+.logo_form_end {
+  width: 5.5%;
+  height: 3.2rem;
+  background-color: #ddd;;
+  line-height: 3rem;
+  color: #81868a;
+  font-size: 0.5rem;
+}
+
+.name_form input {
+  padding-left: 2%;
+  width: 100%;
+  height: 3.2rem;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dbcccc;
+}
+
+.bloc_Pages input[type="submit"] {
+  width: 100%;
+  margin-bottom: 2%;
+}
+/* FIN FORMULAIRES CONNEXION/INSCRIPTRION */
+
+/* FOOTER */
+footer {
+  height: auto;
+  width: 100%;
+  background-color: #C43B39;
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+footer .btn {
+  font-size: 1.5rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+footer .modal-content {
+  color: black;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+footer .modal-content a {
+  color: blue;
+}
+/* FIN FOOTER */
+/* DIVS MULTIPAGES */
+.titre_page{
+text-align: center;
+}
+
+iframe {
+  width: 100%;
+}
+
+footer .btn:hover{
+ color: red;
+}
+
+.bloc_Pages{
+  margin-right: 1%;
+  border:4px solid #fff;;
+  outline:1px solid #999;
+  background-color: #eaeaea;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.3rem;
+}
+
+.bloc_Pages .profils {
+  margin: 1%;
+}
+
+.bloc_Pages a {
+  text-decoration: none;
+  color: black;
+}
+
+.bloc_Pages a:hover {
+  text-decoration: none;
+  color: #9b9494;;
+}
+
+.bloc_Pages ul {
+  text-align: left;
+}
+
+.bloc_Pages li:before {
+  content: "\f069";
+  font-family: 'FontAwesome';
+  font-size: 1rem;
+  margin-right: 1%;
+}
+
+.titre_page {
+  font-family: 'Poiret One', cursive;
+  font-size: 4rem;
+}
+/* FIN DIVS MULTIPAGES */
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 764px) {
+  .row .barre_nav {
+    height: auto;
+    width: auto;
+    background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+    padding-right: 0;
+    position: relative;
+  }
+
+  #logo {
+    display: none;
+  }
+}
+
+/* FIN MEDIA QUERIES */
